@@ -2,14 +2,14 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${project_path}    C:\Users\musiakam\Downloads
+${project_path}    C:\Users\vdi-student\Desktop\screens
 ${wikipedia_login}  RobotTests
 ${wikipedia_password}  RobotFramework
 
 *** Keywords ***
 Log In Wikipedia
     [Arguments]  ${login}  ${password}
-    open browser    https://pl.wikipedia.org  Chrome  executable_path=C:/chromedriver/chromedriver.exe
+    open browser    https://pl.wikipedia.org  Chrome  #executable_path=C:/chromedriver/chromedriver.exe
     click element    id:pt-login
     input text    id:wpName1    ${login}
     select checkbox    id:wpRemember
